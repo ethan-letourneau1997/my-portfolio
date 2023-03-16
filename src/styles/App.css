@@ -6,67 +6,27 @@
   --font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
   --font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
   --font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
-  --blue: hsl(220, 90%, 73%);
-  /* --red: hsl(4, 100%, 70%); */
-  --red: hsl(10, 85%, 64%);
-  /* --green: hsl(125, 50%, 70%); */
-  --green: hsl(161, 54%, 61%);
-  /* --yellow: hsl(46, 86%, 70%); */
-  --yellow: hsl(65, 83%, 77%);
-  --txt-secondary: hsl(210, 17%, 80%);
-  --txt-primary: #fff;
-}
-
-.txt-prim {
-  color: var(--txt-primary) !important;
-}
-
-.txt-sec {
-  color: var(--txt-secondary);
-}
-
-.acc-blue {
-  color: var(--blue) !important;
-}
-.acc-red {
-  color: var(--red);
-}
-.acc-green {
-  color: var(--green);
-}
-.acc-yellow {
-  color: var(--yellow);
 }
 
 * {
   font-family: "Poppins", sans-serif;
-  color: var(--txt-primary);
   font-size: var(--font-size-base);
 }
 
 .App {
   min-height: 100vh;
-  background: linear-gradient(
-    to bottom right,
-    hsl(216, 33%, 2%),
-    hsl(224, 27%, 8%)
-  );
-}
-
-/* NAVBAR */
-
-.navbar {
-  background-color: transparent !important;
-  border-color: transparent;
 }
 
 /* TITLE */
 
+.title-wrapper {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
 h1 {
   font-size: var(--font-size-xxxl) !important;
   font-weight: 500;
-  color: hsl(220, 30, 4);
-  color: hsl(222, 28, 7);
 }
 
 h1 span {
@@ -79,6 +39,10 @@ h1 span {
 }
 
 /* CARD */
+
+.card {
+  border-radius: 10px;
+}
 
 .card-title {
   font-size: var(--font-size-lg);
@@ -93,49 +57,11 @@ h1 span {
   font-weight: 300;
 }
 
-/* .card {
-  background: linear-gradient(
-    to top right,
-    hsl(212, 24%, 8%),
-    hsl(217, 16%, 12%)
-  );
-  width: 80%;
-  border-radius: 12px;
-} */
-
-.card {
-  background-color: var(--foreground) !important;
-  background: hsla(224, 22%, 10%, 1);
-  background: linear-gradient(
-    45deg,
-    hsla(224, 22%, 10%, 1) 69%,
-    hsla(220, 21%, 14%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    45deg,
-    hsla(224, 22%, 10%, 1) 69%,
-    hsla(220, 21%, 14%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    hsla(224, 22%, 10%, 1) 69%,
-    hsla(220, 21%, 14%, 1) 100%
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#14171F", endColorstr="#1C212B", GradientType=1 );
-  border-radius: 15px;
-}
-
-.card .hr {
-  color: rgba(255, 255, 255, 0.257);
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   h1 {
     font-size: var(--font-size-xl) !important;
     font-weight: 500;
-    color: hsl(220, 30, 4);
-    color: hsl(222, 28, 7);
   }
 
   h1 span {
@@ -148,8 +74,6 @@ h1 span {
   h1 {
     font-size: var(--font-size-xxl) !important;
     font-weight: 500;
-    color: hsl(220, 30, 4);
-    color: hsl(222, 28, 7);
   }
 
   h1 span {
@@ -170,8 +94,6 @@ h1 span {
   h1 {
     font-size: var(--font-size-xxxl) !important;
     font-weight: 500;
-    color: hsl(220, 30, 4);
-    color: hsl(222, 28, 7);
   }
 
   h1 span {

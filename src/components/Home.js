@@ -1,42 +1,19 @@
-import { Container, Row, Col, Card, Navbar, Nav } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import checkBox from "../images/png/checkbox.png";
 
 function Home() {
   return (
     <div className="Home">
-      <Navbar
-        className="pb-5"
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
-        <Container fluid>
-          <Navbar.Brand className="acc-blue" href="#home">
-            Ethan Letourneau
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
-              <Nav.Link href="#features">
-                {" "}
-                <span className="txt-sec">Projects</span>{" "}
-              </Nav.Link>
-              <Nav.Link href="#pricing">
-                <span className="txt-sec">About</span>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
       <Container>
-        <Row className="text-center title-row">
-          <h1>
-            I'm <span className="acc-blue">Ethan Letourneau</span>
-          </h1>
-          <h1>and i make websites</h1>
+        <Row className="text-center">
+          <div className="title-wrapper">
+            <h1>
+              I'm <span className="header-name">Ethan Letourneau</span>
+            </h1>
+            <h1>and i make websites</h1>
+          </div>
         </Row>
-        <Row className="pt-5">
+        <Row>
           <Col
             xs={12}
             sm={12}
@@ -45,9 +22,9 @@ function Home() {
             className="d-flex justify-content-center mb-4"
           >
             {/* REST API */}
-            <Card style={{ width: "20rem" }}>
+            <Card className="web-card" style={{ width: "20rem" }}>
               <Card.Body className="p-4">
-                <Card.Title className="acc-red pb-4 pt-2">Web</Card.Title>
+                <Card.Title className="pb-4 pt-2">Web</Card.Title>
                 <Card.Subtitle>
                   Design Modern Responsive web applications
                 </Card.Subtitle>
@@ -85,9 +62,9 @@ function Home() {
             className="d-flex justify-content-center mb-4 "
           >
             {/* REST API */}
-            <Card style={{ width: "20rem" }}>
+            <Card className="code-card" style={{ width: "20rem" }}>
               <Card.Body className="p-4">
-                <Card.Title className="acc-green pb-4 pt-2">Code</Card.Title>
+                <Card.Title className="pb-4 pt-2">Code</Card.Title>
                 <Card.Subtitle>
                   Knowledge in a variety of language and technologies
                 </Card.Subtitle>
@@ -124,9 +101,9 @@ function Home() {
             className="d-flex justify-content-center mb-4 "
           >
             {/* REST API */}
-            <Card style={{ width: "20rem" }}>
+            <Card className="data-card" style={{ width: "20rem" }}>
               <Card.Body className="p-4">
-                <Card.Title className="acc-yellow pb-4 pt-2">Data</Card.Title>
+                <Card.Title className="pb-4 pt-2">Data</Card.Title>
                 <Card.Subtitle>
                   Experience working with large amounts of data
                 </Card.Subtitle>

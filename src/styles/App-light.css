@@ -1,3 +1,25 @@
-.dark-theme h4 {
-  color: orangered;
+:root {
+  --background: #f1f2f0;
+  /* --blue: hsl(220, 90%, 73%); */
+  --blue: hsl(220, 90%, 73%);
+  --red: hsl(10, 85%, 64%);
+  --green: hsl(161, 54%, 61%);
+  --yellow: hsl(65, 83%, 77%);
+  --txt-secondary: hsl(210, 17%, 80%);
+  --txt-primary: #ffffff;
+}
+
+.light-theme {
+  background-color: var(--background);
+}
+
+.light-theme .header-name {
+  color: hsl(220, 90%, 60%);
+}
+
+/* NAVBAR */
+
+.light-theme .navbar {
+  background-color: hsl(220, 90%, 60%) !important;
+  border-color: transparent;
 }
